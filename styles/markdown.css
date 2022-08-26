@@ -12,7 +12,7 @@
   @apply mt-5 text-3xl;
 }
 .markdown-class h2 {
-  @apply mt-5 text-2xl;
+  @apply mt-20 text-2xl font-bold;
 }
 .markdown-class h3 {
   @apply mt-5 text-xl;
@@ -36,11 +36,11 @@
 }
 
 .markdown-class strong {
-  @apply font-extrabold;
+  @apply font-bold;
 }
 
 .markdown-class hr {
-  @apply my-5;
+  @apply my-8;
 }
 
 

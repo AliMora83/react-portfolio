@@ -1,62 +1,99 @@
 ---
 date: '2022-07-15T11:50:54.000Z'
-title: Amazing Blog
-tagline: This is a Tagline If you want to add.
-preview: >-
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
-image: >-
-  https://images.unsplash.com/photo-1656188505561-19f1a1b6cda8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80
+title: Build a weather app
+tagline: 'HTML, CSS, JavaScript'
+preview: This tutorial will show you how to build a weather app using an API
+image: /images/test1.png
 ---
 
-# Heading One
+---
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## 1) Create a new project in VS Code
 
-## This is Heading Two
+**Visual Studio Code** is an open-source, cross-platform text and code editor. It runs on Windows, macOS and Linux. You can use VS Code to create a new project from the command palette (Ctrl+P) or create a new project with the New Project extension.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+## 2) Build HTML Markup
 
-### This is Heading Three
+**HyperText Markup Language or HTML** is the standard markup language for documents designed to be displayed in a web browser. When writing HTML, you add "tags" to the text in order to create the structure. These tags tell the browser how to display the text or graphics in the document.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-#### This is Heading Four With Code Block
+###### Copy this HTML Markup to your VS Code
 
 ```jsx
-<code className={className} {...props}>
-  {children}
-</code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="cityInput">City Name: </label>
+        <input type="text" id="cityInput" name="cityName"
+        placeholder="City name here">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
 ```
+---
 
-## BLockquote
+## 3) Build CSS Stylesheet
+CSS stands for **Cascading Style Sheets**. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users.
 
-> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+###### Copy this CSS Style to your VS Code
 
-## Ordered List with horizontal line
+```jsx
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+```
+---
+
+
+## Languages you will use:
+
+1. HTML
+2. CSS
+3. Javascript
 
 ---
 
-## Unordered List With Horizontal line
+## Link
 
-- First item
-- Second item
-- Third item
-- Fourth item
+Visit the [Weather App](https://openmindi.co.za/weather.html).
 
 ---
 
-## Links
+## Weather App image
 
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+![Weather App image](/images/test1.png)
 
-## Images
-
-![An old rock in the desert](https://images.unsplash.com/photo-1654475677192-2d869348bb4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+---
